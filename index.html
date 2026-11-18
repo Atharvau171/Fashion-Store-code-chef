@@ -1,12 +1,20 @@
-<link rel="stylesheet" href="style.css">
-<body>
-	<header>
-	    <div class="NavBar">
-	        <a href="" id="navbar-title">
-	            FASHION STORE
-	        </a>
-	    </div>
-	</header>
+<header>
+    <div class="NavBar">
+        <a href="#" id="navbar-title">FASHION STORE</a>
+
+        <div class="nav-buttons">
+            <button onclick="toggleDarkMode()">🌙 Theme</button>
+        </div>
+    </div>
+</header>
+<div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search T-Shirts, Shoes, Shirts..."
+        onkeyup="searchItems()"
+    >
+</div>
 	
 	<main>
 	    <div class="Items">
@@ -175,9 +183,26 @@
 	            We support a large variety of payment options so that you won't miss a cloth due to unavailability of any payment option. You can use a debit card or your credit card to make the payment. Also, you can directly use your UPI ID to make the payment. We also provide EMI options if you think you can not afford a complete amount at once. Other than that, you can directly make your payment through your bank details and even if you are not sure or you are in doubt then you can choose the Cash option where you can pay the amount in cash to our partner who will be delivering your cloth at your doorstep.
 	        </p>
 	    </div>
+		<div class="newsletter">
+    <h2>Subscribe to Our Newsletter!</h2>
+    <p>Get updates about upcoming sales and exclusive offers.</p>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+    >
+
+    <button onclick="subscribe()">Subscribe</button>
+
+    <p id="message"></p>
+</div>
 	</main>
 	
 	<footer>
 	    &#169; 2012-2023 FashionStore.com
 	</footer>
+	<button id="topBtn" onclick="goToTop()">⬆</button>
+
+<script src="script.js"></script>
 </body>
